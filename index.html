@@ -8,7 +8,9 @@
      <link rel="stylesheet" type="text/css" href="css/public.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
      <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.css">
     <script type="text/javascript" src="javascript/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="js/swiper.js"></script>
 </head>
 <body>
      <!--头部-->
@@ -22,8 +24,19 @@
          <li class="headerTopList"><i class="iconfont headerTopMinBtn">&#xe60a;</i></li>
          <li class="headerTopList"><i class="iconfont headerTopMinBtn">&#xe64c;</i></li>
         </ul>
+     <!--头部2-->
+     <ul class="headerBox-1">
+         <li class="headerTopList"><span>全国</span></li>
+         <li class="headerTopList"><i class="iconfont headerTopMinBtn">&#xe613;</i></li>
+         <form name="searchBox">
+             <input type="text" name="search" placeholder="搜索您想要的车">
+             <i class="iconfont headerTopFooder">&#xe614;</i>
+         </form>
+         <li class="headerTopList"><i class="iconfont headerTopMinBtn">&#xe60a;</i></li>
+         <li class="headerTopList"><i class="iconfont headerTopMinBtn">&#xe64c;</i></li>
+     </ul>
      <!--中间部分-->
-      <section>
+      <div class="section">
           <div class="headerNav-box active-headerNav">
               <!--轮播图区-->
               <div class="carousel">
@@ -93,42 +106,188 @@
               </div>
               <!--//分割线-->
               <div class="fgx"></div>
+               <!--热门二手车-->
+               <div class="hotCar">
+                 <div class="hotCar-L">
+                      热门二手车
+                 </div>
+                   <div class="hotCar-R">
+                       <span class="findOldCar">查看二手车</span><i class="iconfont findMoreCar">&#xe622;</i>
+
+                   </div>
+               </div>
+               <!--车辆的种类的价格-->
+              <div class="carPriceListBox">
+                  <ul class="carPriceListTop">
+                      <a  href="#" class="priceShow">5万以下</a>
+                      <a  href="#" class="priceShow">5-10万</a>
+                      <a  href="#" class="priceShow">10-15万</a>
+                      <a  href="#" class="priceShow">15万以上</a>
+                    </ul>
+                  <ul class="carPriceListMid">
+                      <li class="priceShowMid"><a href="#" class="priceShowImg"><img src="images/varietyCar-1.jpg" class="minImg"></a><a href="#" class="priceShowText">大众</a></li>
+                      <li class="priceShowMid"><a href="#" class="priceShowImg"><img src="images/varietyCar-2.jpg" class="minImg"></a><a href="#" class="priceShowText">福特</a></li>
+                      <li class="priceShowMid"><a href="#" class="priceShowImg"><img src="images/varietyCar-3.jpg" class="minImg"></a><a href="#" class="priceShowText">别克</a></li>
+                      <li class="priceShowMid"><a href="#" class="priceShowImg"><img src="images/varietyCar-4.jpg" class="minImg"></a><a href="#" class="priceShowText">现代</a></li>
+                  </ul>
+                  <ul class="carPriceListMid">
+                      <li class="priceShowMid"><a href="#" class="priceShowImg"><img src="images/varietyCar-5.jpg" class="minImg"></a><a href="#" class="priceShowText">大众</a></li>
+                      <li class="priceShowMid"><a href="#" class="priceShowImg"><img src="images/varietyCar-6.jpg" class="minImg"></a><a href="#" class="priceShowText">福特</a></li>
+                      <li class="priceShowMid"><a href="#" class="priceShowImg"><img src="images/varietyCar-7.jpg" class="minImg"></a><a href="#" class="priceShowText">别克</a></li>
+                      <li class="priceShowMid"><a href="#" class="priceShowImg"><img src="images/varietyCar-8.jpg" class="minImg"></a><a href="#" class="priceShowText">现代</a></li>
+                  </ul>
+              </div>
+
+              <!--//车型大图展示-->
+                   <div class="carTypeBigBox">
+                       <a href="#" class="carTypeBigL"><img src="images/varietyBig-1.jpg" class="carTypeBigImg"></a>
+                       <a href="#" class="carTypeBigR"><img src="images/varietyBig-2.jpg" class="carTypeBigImg"></a>
+                       </div>
+              <!--车型3张大图展示-->
+                   <div class="carTypeBigThree">
+                       <a href="#" class="ThreeTypeImg"><img src="images/varietyBig-3.jpg" class="threeImgShow"></a>
+                       <a href="#" class="ThreeTypeImg"><img src="images/varietyBig-3.jpg" class="threeImgShow"></a>
+                       <a href="#" class="ThreeTypeImg"><img src="images/varietyBig-3.jpg" class="threeImgShow"></a>
+                              </div>
+               <!--两张轮播图区域使用swiper-->
+              <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="images/mildelImg-1.jpg" class="mildelImg"></div>
+                      <div class="swiper-slide"><img src="images/mildelImg-2.jpg" class="mildelImg"></div>
+
                   </div>
-          <div class="headerNav-box ">
-              2
+                  <!--如果需要分页器-->
+                  <div class="swiper-pagination"></div>
+
+              </div>
+          <!--模块分割线-->
+              <div class="modelLine"></div>
+              <!--瓜子保卖车-->
+              <div class="keepSellCarBox">
+                  <div class="keepSellCarTop">
+                      <div class="keepSellCarTop-L"><h4 class="gzTit"><img src="images/gzTitMinBtn-1.jpg" class="gzTitMinBtn">瓜子保卖车</h4></div>
+                      <div class="keepSellCarTop-R">
+                           <a href="#" class="keepDetailText">详情</a><a href="#" class="keepDetailBtn"><i class="iconfont detailBtn">&#xe622;</i></a>
+                      </div>
+                  </div>
+                  <!--瓜子保卖车图片-->
+                  <div class="keepSellCarBoxImg">
+                      <a href="#" class="keepSellCarBoxImg-L"><img src="images/sellCarImg-1.jpg" class="sellBtn"></a>
+                      <div class="keepSellCarBoxImg-R">
+                          <a href="#" class="SellCarL"><img src="images/sellCarImg-2.jpg" class="sellCarImg"></a>
+                          <a href="#" class="SellCarL"><img src="images/sellCarImg-3.jpg" class="sellCarImg"></a>
+                      </div>
+                  </div>
+
+              </div>
+              <!--模块分割线-->
+              <div class="modelLine"></div>
+              <!--毛豆新车-->
+              <div class="keepSellCarBox">
+                  <div class="keepSellCarTop">
+                      <div class="keepSellCarTop-L"><h4 class="gzTit mdgzTit"><img src="images/mdMinImg.jpg" class="gzTitMinBtn">毛豆新车</h4></div>
+                      <div class="keepSellCarTop-R">
+                          <a href="#" class="keepDetailText">详情</a><a href="#" class="keepDetailBtn"><i class="iconfont detailBtn">&#xe622;</i></a>
+                      </div>
+                  </div>
+                  <!--瓜子保卖车图片-->
+                  <div class="keepSellCarBoxImg">
+                      <a href="#" class="keepSellCarBoxImg-L"><img src="images/mdNewCar-1.jpg" class="sellBtn"></a>
+                      <div class="keepSellCarBoxImg-R">
+                          <a href="#" class="SellCarL"><img src="images/sellCarImg-2.jpg" class="sellCarImg"></a>
+                          <a href="#" class="SellCarL"><img src="images/sellCarImg-3.jpg" class="sellCarImg"></a>
+                      </div>
+                  </div>
+              </div>
+              <!--模块分割线-->
+              <div class="modelLine"></div>
+            <!--瓜子金融-->
+              <div class="gzMoneyBox">
+                  <div class="gzMoneyTop">
+                      <div class="gzMoneyTop-L"><h4 class="gzTit gzMoney"><img src="images/gzMoney.jpg" class="gzTitMinBtn">瓜子金融</h4></div>
+                      <div class="gzMoneyTop-R">
+                          <a href="#" class="gzText">详情</a><a href="#" class="gzBtn"><i class="iconfont detailBtn">&#xe622;</i></a>
+                      </div>
+                  </div>
+                  <!--瓜子金融图片-->
+                  <div class="gzMoneyImgBox">
+                      <a href="#" class="gzMoneyImgList"><img src="images/gzMoneyBig-1.jpg" class="gzMoneyBig"></a>
+                      <a href="#" class="gzMoneyImgList"><img src="images/gzMoneyBig-2.jpg" class="gzMoneyBig"></a>
+                      <a href="#" class="gzMoneyImgList"><img src="images/gzMoneyBig-3.jpg" class="gzMoneyBig"></a>
+                  </div>
+              </div>
+              <!--模块分割线-->
+              <div class="modelLine"></div>
+              <!--发现更多-->
+                <div class="foundMoreBox">
+                    <h6 class="foodGoodCar-L">发现</h6>
+                    <div class="foodGoodCar-R"><a href="#" class="moreText">更多</a><a href="#" class="moreTextBtn"><i class="iconfont moreBtn">&#xe622;</i></a></div>
+                </div>
+              <!--发现更多列表-->
+              <div class="findMoreList">
+                  <div class="findMoreListText">
+                      <h4 class="carMessage">福特锐界二手车价格评估</h4>
+                      <span class="messageBtn">解密二手车</span>
+                  </div>
+                  <div class="findMoreListImg"><img src="images/findMoreImg-1.jpg" class="findMoreImg"></div>
+              </div>
+              <div class="findMoreList">
+                  <div class="findMoreListText">
+                      <h4 class="carMessage">福特锐界二手车价格评估</h4>
+                      <span class="messageBtn">解密二手车</span>
+                  </div>
+                  <div class="findMoreListImg"><img src="images/findMoreImg-2.jpg" class="findMoreImg"></div>
+              </div>
+              <div class="findMoreList">
+                  <div class="findMoreListText">
+                      <h4 class="carMessage">福特锐界二手车价格评估</h4>
+                      <span class="messageBtn">解密二手车</span>
+                  </div>
+                  <div class="findMoreListImg"><img src="images/findMoreImg-1.jpg" class="findMoreImg"></div>
+              </div>
+              <!--空白部分-->
+              <div class="nullBox"></div>
+              <!--点击回到顶部-->
+              <div class="clickBlockTop">
+                   <img  src="images/clickBlockImg.jpg" class="clickBtnBlock" >
+              </div>
           </div>
-          <div class="headerNav-box ">
-              3
-          </div>
-          <div class="headerNav-box ">
-              4
-          </div>
-          <div class="headerNav-box ">
-              5
-          </div>
-         </section>
+          <!--<div class="headerNav-box ">-->
+              <!--2-->
+          <!--</div>-->
+          <!--<div class="headerNav-box ">-->
+              <!--3-->
+          <!--</div>-->
+          <!--<div class="headerNav-box ">-->
+              <!--4-->
+          <!--</div>-->
+          <!--<div class="headerNav-box ">-->
+              <!--5-->
+          <!--</div>-->
+
+            </div>
   <!--尾部公共部分-->
       <ul class="footer">
-           <li>
+           <a href="#" class="jump">
                <img class="footerBtn" src="images/footerBtn-1.jpg">
                <span class="footerCurrent active">首页</span>
-           </li>
-           <li>
+           </a>
+          <a href="buyCar.html" class="jump">
                <img class="footerBtn" src="images/footerBtn-2.jpg">
                <span class="footerCurrent">买车</span>
-           </li>
-           <li>
+           </a>
+          <a href="#" class="jump">
                <img class="footerBtn" src="images/footerBtn-3.jpg">
                <span class="footerCurrent">卖车</span>
-           </li>
-           <li>
+           </a>
+          <a href="#" class="jump">
                <img class="footerBtn" src="images/footerBtn-4.jpg">
                <span class="footerCurrent">发现</span>
-           </li>
-           <li>
+           </a>
+          <a href="#" class="jump">
                <img class="footerBtn" src="images/footerBtn-5.jpg">
                <span class="footerCurrent">我的</span>
-           </li>
+           </a>
           </ul>
  <script type="text/javascript" src="javascript/public.js"></script>
  <script type="text/javascript" src="js/bufferMove.js"></script>
